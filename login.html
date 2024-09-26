@@ -12,28 +12,33 @@
 
 </head>
 <body>
-    
-    <div class="container d-flex justify-content-start">
-        <div class="login-box">
-          <!-- Rounded Image -->
-          <img src="https://i.pinimg.com/736x/bd/fb/07/bdfb07d528e944f27fd9033117eb4d9d.jpg" alt="Profile Image" class="rounded-image">
-      
-          <!-- login Form -->
-          <h3>Bank of America</h3>
-          <form>
-            
-            <div class="mb-3">
-          
-              <input type="email" class="form-control" id="email" placeholder="Account number">
-            </div>
-            <div class="mb-3">
-             
-              <input type="password" class="form-control" id="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Register</button>
-          </form>
-        </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login</title>
+      <link rel="stylesheet" href="login.css">
+      <script src="login.js" defer></script>
+  </head>
+  <body>
+      <div class="container">
+          <div class="login-box">
+              <h3>Login</h3>
+              <form onsubmit="Login(event); return false;">
+                  <div class="mb-3">
+                      <input type="text" class="form-control" id="loginNumber" placeholder="Account number">
+                  </div>
+                  <div class="mb-3">
+                      <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Login</button>
+              </form>
+          </div>
       </div>
+  </body>
+  </html>
+  
     
     </body>
 </html>
